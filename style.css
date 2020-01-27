@@ -1,0 +1,63 @@
+body {
+    margin: 0;
+    background-color: gainsboro;
+}
+.holder img{
+    height: 210px;
+    width: 140px;
+    object-fit: cover;
+}
+
+.slider {
+    border: 1px solid gainsboro;
+    margin: 15px 15px 0px 15px;
+    position: relative;
+    height: 250px;
+    border-radius: 10px;
+    background: white;
+}
+.holder {
+    border-radius: 10px;
+    overflow: hidden;
+    display: inline-block;
+    margin-left: 4.5px;
+    margin-right: 4.5px;
+    position: relative;
+    margin-top: 20px;
+    border: 1px solid gainsboro;
+}
+.transparent-slider {
+    height: 250px!important;
+    white-space: nowrap;
+    overflow-x: auto;
+    position: absolute;
+    left: -1em;
+    margin-right: -1em;
+    padding-left: 2em;
+    padding-right: 2em;
+    right: 0em;
+    -ms-overflow-style: none;
+    overflow: -moz-scrollbars-none;
+}
+div.name {
+    position: absolute;
+    background: linear-gradient(to bottom, transparent, rgba(0,0,0,0.9));
+    left: 0;
+    right: 0;
+    bottom: 0;
+    right: 0;
+    white-space: pre-wrap;
+    color: white;
+    padding: .3em .5em 1em .5em;
+    font-family: Tahoma;
+    font-size: 17px;
+}
+.transparent-slider::-webkit-scrollbar {
+    display:none;
+}
+
+@media only screen and (min-width: 900px){
+    .slider {
+        display:none;
+    }
+}
